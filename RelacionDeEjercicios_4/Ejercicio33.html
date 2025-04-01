@@ -1,0 +1,59 @@
+<!--- Crea tres elementos HTML, y aplícales la propiedad z-index. Después comprueba la
+diferencia sin aplicar dicha propiedad cuál es el resultado.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Z-Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            border: 2px solid black;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            text-align: center;
+            line-height: 150px;
+            font-weight: bold;
+            color: white;
+        }
+        .box1 {
+            background-color: red;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+        .box2 {
+            background-color: green;
+            top: 70px;
+            left: 70px;
+            z-index: 3;
+        }
+        .box3 {
+            background-color: blue;
+            top: 90px;
+            left: 90px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prueba de Z-Index</h1>
+    <div class="container">
+        <div class="box box1">Z-Index 1</div>
+        <div class="box box2">Z-Index 3</div>
+        <div class="box box3">Z-Index 2</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/*
+-Cada h2 debe estar precedido del texto "seguimos con..." en cursiva
+-la primera letra engra de cada párrafo tendrá color de fondo negro y color de texto blanco
+-Todos los encabezados del documento deben cambiar el color de de texto a blanco cuando pasemos el punto de ratón sobre ellos
+*/
+h2::before {
+    content: "seguimos con ";
+    font-style: italic;
+}
+
+p::first-letter {
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: rgb(34, 197, 34);
+}

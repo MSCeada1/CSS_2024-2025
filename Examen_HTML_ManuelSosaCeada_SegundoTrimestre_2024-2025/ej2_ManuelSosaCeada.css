@@ -1,0 +1,17 @@
+/*
+-El primer párrafo que siga a cada encabezado h2 tebdrá la letra negrita
+-Las celdas que sean de encabezamiento (th) y se encuentren en un cuerpo de tabla
+(TBODY) tendrán fondo gris
+-Los elementos de lista (li) del índice que hay al principio de la página estarán en cursiva
+*/
+h2 + p {
+    font-weight: bold;
+}
+
+tbody th {
+    background-color: grey;
+}
+
+#index li {
+    font-style: italic;
+}

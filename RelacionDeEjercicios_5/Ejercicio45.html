@@ -1,0 +1,104 @@
+<!--Realiza una página que contenga tres DIV con lista numeradas cada uno y además tres
+tablas con varias filas, de forma que apliques reglas de estilo al primer y ultimo elemento de
+cada lista. También deberás aplicar estilos a las filas terceras de cada tabla. Los párrafos y
+las tablas deberán estar alternando.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y Tablas con Estilos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        div {
+            margin: 20px;
+            padding: 15px;
+            border: 2px solid #333;
+        }
+        /* Estilos para el primer y último elemento de cada lista */
+        ol li:first-child {
+            color: blue;
+            font-weight: bold;
+        }
+        ol li:last-child {
+            color: red;
+            font-weight: bold;
+        }
+        /* Estilos para la tercera fila de cada tabla */
+        table {
+            width: 80%;
+            margin: 10px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        tr:nth-child(3) {
+            background-color: yellow;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>Lista y tabla en el primer div:</p>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ol>
+        <table>
+            <tr><th>Columna 1</th><th>Columna 2</th></tr>
+            <tr><td>Dato 1</td><td>Dato 2</td></tr>
+            <tr><td>Dato 3</td><td>Dato 4</td></tr>
+            <tr><td>Dato 5</td><td>Dato 6</td></tr>
+        </table>
+    </div>
+
+    <div>
+        <p>Lista y tabla en el segundo div:</p>
+        <ol>
+            <li>Elemento A</li>
+            <li>Elemento B</li>
+            <li>Elemento C</li>
+            <li>Elemento D</li>
+            <li>Elemento E</li>
+        </ol>
+        <table>
+            <tr><th>Columna A</th><th>Columna B</th></tr>
+            <tr><td>Dato A1</td><td>Dato A2</td></tr>
+            <tr><td>Dato A3</td><td>Dato A4</td></tr>
+            <tr><td>Dato A5</td><td>Dato A6</td></tr>
+        </table>
+    </div>
+
+    <div>
+        <p>Lista y tabla en el tercer div:</p>
+        <ol>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+            <li>Cuarto</li>
+            <li>Último</li>
+        </ol>
+        <table>
+            <tr><th>Columna X</th><th>Columna Y</th></tr>
+            <tr><td>Dato X1</td><td>Dato X2</td></tr>
+            <tr><td>Dato X3</td><td>Dato X4</td></tr>
+            <tr><td>Dato X5</td><td>Dato X6</td></tr>
+        </table>
+    </div>
+
+</body>
+</html>

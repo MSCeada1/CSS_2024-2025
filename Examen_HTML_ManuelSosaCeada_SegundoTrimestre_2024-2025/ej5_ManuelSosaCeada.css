@@ -1,0 +1,26 @@
+/*
+-Debes crear en el fichero css_examen tren enlaces diferentes a páginas web; deberan aparecer de color azul
+con fondo amarillo
+-Si presionamos la tecla tab se pondrá el enlace activo que tendrá color verde con fondo naranja
+-Si pasamos la flecha del mouse sobre algún enlace aparecerá de color gris con fondo lila
+-Los enlaces visitados deberán aparecer de color negro con fondo amarillo.
+*/
+a{
+    color: blue;
+    background-color: yellow;
+}
+a:focus {
+    color: green;
+    background-color: orange;
+    outline: none; 
+}
+a:hover {
+    color: gray;
+    background-color: purple;
+}
+
+
+a:visited {
+    color: black;
+    background-color: yellow;
+}

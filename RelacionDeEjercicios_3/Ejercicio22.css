@@ -1,0 +1,37 @@
+/* Estilo para el body con imagen de fondo en una columna */
+body.columna {
+    background: url('Imágenes/leon.jpg') no-repeat;  /* Imagen de fondo */
+    background-position: left center;  /* Posición de la imagen a la izquierda, centrada verticalmente */
+    background-size: 100% 100vh;  /* La imagen ocupará toda la altura de la ventana (100vh) */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Estilo para el body con imagen de fondo en una fila */
+body.fila {
+    background: url('Imágenes/goku.gif') no-repeat; /* Imagen de fondo */
+    background-position: top center;  /* Imagen centrada horizontalmente */
+    background-size: 100% 100%; /* La imagen cubrirá toda la anchura del body */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Estilo para el elemento h3 con imagen de fondo */
+h3 {
+    background: url('Imágenes/tigre.jpg') no-repeat center center; /* Imagen centrada */
+    background-size: cover; /* Escalar la imagen para cubrir el área */
+    color: white;  /* Asegura que el texto sea legible sobre el fondo */
+    padding: 30px;
+    font-size: 24px;
+}
+
+/* Estilo para el elemento p con imagen de fondo */
+p {
+    background: url('Imágenes/asterix y obelix.gif') no-repeat center center; /* Imagen centrada */
+    background-size: cover; /* Escalar la imagen para cubrir el área */
+    color: white;  /* Asegura que el texto sea legible sobre el fondo */
+    padding: 20px;
+    font-size: 18px;
+}

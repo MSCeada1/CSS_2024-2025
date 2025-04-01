@@ -1,0 +1,87 @@
+<!--- Confecciona una página que contenga 3 (DIV). En cada uno de ellos deberá aparecer una
+tablas con 10 filas cada una. Para el primer DIV, aplica reglas de estilo para las filas impares. Para el
+segundo DIV, aplica las reglas a las filas pares. En el tercer DIV, aplica las reglas a la última fila y a
+cada tres anteriores hasta llegar a la primera. Utiliza pseudoclases nth-child y nth-last-child.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de nth-child y nth-last-child</title>
+    <style>
+        /* Estilo para filas impares en el primer div */
+        .tabla1 tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        /* Estilo para filas pares en el segundo div */
+        .tabla2 tr:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        /* Estilo para la última fila y cada tres anteriores en el tercer div */
+        .tabla3 tr:nth-last-child(3n) {
+            background-color: lightcoral;
+        }
+        .tabla3 tr:last-child {
+            background-color: darkred;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Tabla 1 - Filas impares</h2>
+        <table border="1" class="tabla1">
+            <tbody>
+                <tr><td>Fila 1</td></tr>
+                <tr><td>Fila 2</td></tr>
+                <tr><td>Fila 3</td></tr>
+                <tr><td>Fila 4</td></tr>
+                <tr><td>Fila 5</td></tr>
+                <tr><td>Fila 6</td></tr>
+                <tr><td>Fila 7</td></tr>
+                <tr><td>Fila 8</td></tr>
+                <tr><td>Fila 9</td></tr>
+                <tr><td>Fila 10</td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div>
+        <h2>Tabla 2 - Filas pares</h2>
+        <table border="1" class="tabla2">
+            <tbody>
+                <tr><td>Fila 1</td></tr>
+                <tr><td>Fila 2</td></tr>
+                <tr><td>Fila 3</td></tr>
+                <tr><td>Fila 4</td></tr>
+                <tr><td>Fila 5</td></tr>
+                <tr><td>Fila 6</td></tr>
+                <tr><td>Fila 7</td></tr>
+                <tr><td>Fila 8</td></tr>
+                <tr><td>Fila 9</td></tr>
+                <tr><td>Fila 10</td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div>
+        <h2>Tabla 3 - Última fila y cada tres anteriores</h2>
+        <table border="1" class="tabla3">
+            <tbody>
+                <tr><td>Fila 1</td></tr>
+                <tr><td>Fila 2</td></tr>
+                <tr><td>Fila 3</td></tr>
+                <tr><td>Fila 4</td></tr>
+                <tr><td>Fila 5</td></tr>
+                <tr><td>Fila 6</td></tr>
+                <tr><td>Fila 7</td></tr>
+                <tr><td>Fila 8</td></tr>
+                <tr><td>Fila 9</td></tr>
+                <tr><td>Fila 10</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

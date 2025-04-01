@@ -1,0 +1,11 @@
+.subrayado {
+    text-decoration: underline;
+    color: blue;
+    font-weight: bold;
+}
+
+.italica {
+    font-style: italic;
+    color: darkred;
+    font-size: 18px;
+}

@@ -1,0 +1,73 @@
+<!--Utilizando la tabla anterior y dándole contenido a todas las celdas. Muestra el primer
+carácter de cada celda con una regla de estilo. Muestra la primera línea de cada celda con
+otra regla de estilo diferente.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Estilos a Primer Carácter y Primera Línea</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: left;
+            width: 200px;
+        }
+
+        /* Estilo para el primer carácter de cada celda */
+        td::first-letter {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Estilo para la primera línea de cada celda */
+        td::first-line {
+            color: blue;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tabla con Estilos en Primer Carácter y Primera Línea</h2>
+    <table>
+        <tr>
+            <td>Hola mundo, esta es una prueba.</td> 
+            <td>Ejemplo de tabla con estilos.</td> 
+            <td>CSS es muy poderoso.</td> 
+            <td>Aplicando pseudoelementos.</td>
+        </tr>
+        <tr>
+            <td>Diseño web con HTML y CSS.</td> 
+            <td>Primera línea con estilo azul.</td> 
+            <td>El primer carácter será rojo.</td> 
+            <td>¡Esto es genial!</td>
+        </tr>
+        <tr>
+            <td>Una nueva línea de datos.</td> 
+            <td>Todo se ve más profesional.</td> 
+            <td>Gracias a los pseudoelementos.</td> 
+            <td>Las tablas pueden mejorarse.</td>
+        </tr>
+        <tr>
+            <td>Practicando CSS a fondo.</td> 
+            <td>Esto hace la web más atractiva.</td> 
+            <td>Aprender CSS es útil.</td> 
+            <td>Vamos por más ejercicios.</td>
+        </tr>
+    </table>
+
+</body>
+</html>

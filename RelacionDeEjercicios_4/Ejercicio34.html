@@ -1,0 +1,75 @@
+<!--Crea una página web con 3 columnas. Utiliza para ello contenedores DIV,
+posicionamiento absolute y distintos valores de la propiedad margin. En la primera
+columna será de un menú de opciones vertical.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres Columnas con DIV</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20%;
+            height: 100vh;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu ul li {
+            margin: 15px 0;
+        }
+        .menu ul li a {
+            color: rgb(1, 168, 17);
+            text-decoration: none;
+        }
+        .content {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            width: 50%;
+            height: 100vh;
+            background-color: #adc23a;
+            padding: 20px;
+        }
+        .sidebar {
+            position: absolute;
+            top: 0;
+            left: 70%;
+            width: 30%;
+            height: 100vh;
+            background-color: #6d2222;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="https://www.google.es">Opción 1</a></li>
+            <li><a href="https://as.com">Opción 2</a></li>
+            <li><a href="https://www.ferrari.com/es-ES">Opción 3</a></li>
+            <li><a href="https://www.escuelamasterchef.com/matriculate/">Opción 4</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Contenido Principal</h2>
+        <p>Aquí va el contenido de la página.</p>
+    </div>
+    <div class="sidebar">
+        <h2>Barra Lateral</h2>
+        <p>Información adicional o publicidad.</p>
+    </div>
+</body>
+</html>

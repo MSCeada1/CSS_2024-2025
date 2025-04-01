@@ -1,0 +1,33 @@
+<!--- Diseña una página web en la que crees un párrafo marcado por una etiqueta, otro párrafo
+alineado a la izquierda , y otro párrafo contenido simplemente en el cuerpo. Define estilos
+diferentes para el párrafo marcado por la etiqueta, otro para el párrafo alineado y otro
+diferente para toda la página. ¿Cuál de ellos prevalece sobre los demás?
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferentes estilos</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p style="text-align: left; color: darkblue;background-color: darkkhaki; text-decoration: solid;">
+        Hola mundo
+    </p>
+    <p style="color: orange; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: black;">
+        Tres tristes tigres comen trigo en un trigal
+    </p>
+    <p>
+        Este parrafo esta contenido en el cuerpo
+    </p>
+    <!--El estilo que tiene preferencia es el que esta definido en la cabezera
+    puesto que afecta a toda la página-->
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!--Utiliza la actividad anterior, para establecer la página con un ancho fijo y otro líquido. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con 3 Columnas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .contenedor {
+            width: 80%; /* Ancho líquido */
+            max-width: 1200px; /* Ancho fijo */
+            margin: 0 auto;
+        }
+        
+        .cabecera, .pie {
+            width: 100%;
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .columna {
+            width: 30%;
+            float: left;
+            margin: 1.66%; /* Para separar las columnas */
+            background: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .pie {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cabecera">Cabecera</div>
+        <div class="columna">Columna 1</div>
+        <div class="columna">Columna 2</div>
+        <div class="columna">Columna 3</div>
+        <div class="pie">Pie de Página</div>
+    </div>
+</body>
+</html>

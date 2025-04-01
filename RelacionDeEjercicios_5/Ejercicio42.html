@@ -1,0 +1,57 @@
+<!--Crea un formulario con distintos elementos. Utilizando los selectores de atributos,
+aplicar diferentes estilos (por ejemplo color de fondo) a los elementos declarados. Por
+ejemplo en INPUT a type=”text”, type=”checkbox”, type=”radio”, type=”button/submit/reset”, …-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Selectores de Atributos</title>
+    <style>
+        /* Estilos para los campos de texto */
+        input[type="text"] {
+            background-color: lightyellow;
+            border: 1px solid gold;
+        }
+
+        /* Estilos para los checkboxes */
+        input[type="checkbox"] {
+            accent-color: green;
+        }
+
+        /* Estilos para los radio buttons */
+        input[type="radio"] {
+            accent-color: blue;
+        }
+
+        /* Estilos para los botones (submit, reset, button) */
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            background-color: lightblue;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="suscripcion">Suscribirse:</label>
+        <input type="checkbox" id="suscripcion" name="suscripcion"><br><br>
+
+        <label>Género:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+        <input type="button" value="Botón">
+    </form>
+</body>
+</html>

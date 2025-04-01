@@ -1,0 +1,13 @@
+.pregunta {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.respuesta {
+    color: darkgreen;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,39 @@
+<!--Crea una página que disponga de un conjunto de contenedores (DIV), de modo que al primer
+contenedor le apliques unas reglas de estilo y al último otras distintas. Utiliza pseudoclases firstchild y last-child.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de first-child y last-child</title>
+    <style>
+        /* Estilo para el primer contenedor */
+        .contenedor div:first-child {
+            background-color: lightblue;
+            padding: 20px;
+            border: 2px solid blue;
+        }
+
+        /* Estilo para el último contenedor */
+        .contenedor div:last-child {
+            background-color: lightcoral;
+            padding: 20px;
+            border: 2px solid red;
+        }
+
+        /* Estilo general para los contenedores */
+        .contenedor div {
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div>Primer contenedor (first-child)</div>
+        <div>Contenedor intermedio</div>
+        <div>Último contenedor (last-child)</div>
+    </div>
+</body>
+</html>

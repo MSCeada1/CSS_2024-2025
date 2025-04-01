@@ -1,0 +1,42 @@
+<!--Utiliza la actividad anterior para aplicarles las propiedades selector de hermano
+adyacente y selector de hermano general.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Selectores</title>
+    <style>
+        /* Selector de hijos: solo afecta a los párrafos que son hijos directos de .contenedor */
+        .contenedor > p {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Selector descendiente: afecta a todos los párrafos dentro de .contenedor, sin importar el nivel */
+        .contenedor p {
+            font-size: 18px;
+        }
+
+        /* Selector de hermano adyacente: afecta al párrafo que sigue inmediatamente después de otro párrafo */
+        p + p {
+            color: red;
+        }
+
+        /* Selector de hermano general: afecta a todos los párrafos que son hermanos del primer párrafo dentro de .contenedor */
+        p ~ p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <p>Este es un párrafo hijo directo del contenedor.</p>
+        <p>Este párrafo es hermano adyacente del anterior.</p>
+        <p>Este párrafo es otro hermano general del primero.</p>
+        <div>
+            <p>Este es un párrafo dentro de un div anidado.</p>
+        </div>
+    </div>
+</body>
+</html>

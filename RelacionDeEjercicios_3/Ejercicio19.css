@@ -1,0 +1,19 @@
+/* Selector universal * */
+* {
+    background-color: #f0f8ff;  /* Fondo azul claro */
+    color: #333;                /* Color de texto gris oscuro */
+    font-family: Arial, sans-serif; /* Fuente Arial */
+    margin: 10px;               /* Margen de 10px alrededor de todos los elementos */
+    padding: 10px;              /* Espacio interno de 10px */
+    border: 2px solid #00bcd4;  /* Borde de 2px color azul */
+}
+
+/* Estilo específico para el elemento p */
+p {
+    background-color: #fffacd;  /* Fondo amarillo claro */
+    color: #555;                /* Color de texto gris claro */
+    font-family: 'Courier New', monospace; /* Fuente Courier */
+    margin: 20px;               /* Margen de 20px alrededor del párrafo */
+    padding: 20px;              /* Espacio interno de 20px */
+    border: 3px dashed #ff6347; /* Borde de 3px, estilo discontinuo, color tomate */
+}

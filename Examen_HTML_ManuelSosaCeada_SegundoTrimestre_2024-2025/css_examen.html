@@ -1,0 +1,233 @@
+<!--El examen trata de un fichero HTML  que proporciona el profesor y posterirormente hay que realizar los
+ficheros css para enlazarlos al fichero HTML-->
+<HTML>
+<HEAD>
+  <link rel="stylesheet" href="ej5_ManuelSosaCeada.css">
+   </HEAD>
+<BODY> <!--los enlaces estan puesto justo abajo de la primera etiqueta body-->
+  <a href="https://es.wikipedia.org/wiki/Cebra">
+    información sobre cebras
+  </a>
+  <br>
+  <a href="https://www.fernandoalonso.com/">
+    Pagina de Fernando Alonso
+  </a>
+  <br>
+  <a href="https://es.wikihow.com/hacer-una-granada-de-humo">
+    Granada de humo
+  </a>
+  <H1>Bases de Datos</H1>
+  <OL>
+    <LI>¿Qué es una Base de Datos?</LI>
+    <LI>Conceptos Generales</LI>
+   <LI>Tipos de Bases de Datos: Planas y Relacionales</LI>
+    <LI>Consideraciones sobre el diseño</LI>
+  </OL>
+  <H2>¿Qué es una Base de Datos?</H2>
+  <P>Una <SPAN>Base de Datos</SPAN> es un programa que permite gestionar y organizar una serie de datos. ¿Y a qué se llaman datos? Pues datos son las listas de los libros que posee una biblioteca, de los usuarios que tiene, una clínica, de sus pacientes y médicos, una empresa, de sus productos, ventas y empleados, ...</P>
+  <P>Por ejemplo, se puede utilizar una base de datos para llevar la gestión de fichas de los artículos de un almacén, introduciendo, modificando, actualizando, sacando informes por impresora, etc. Se pueden realizar consultas tales como: ¿qué artículo se ha vendido más este mes? o ¿qué clientes compran un determinado artículo? o ¿cuál es la ganancia total del mes? ... 
+Un <SPAN>Sistema Gestor de Bases de Datos (SGBD)</SPAN> es un programa que permite introducir, almacenar, ordenar y manipular datos, así como organizarlos de manera significativa para que se pueda obtener información no visible como totales, tendencias o relaciones de otro tipo.</P>
+  <H2>Conceptos Generales</H2>
+  <DIV>
+  	<P>En la terminología propia de las bases de datos hay tres conceptos claves: tabla, registro y campo.</P>
+  	<P>Un programa de base de datos almacena la información que se introduce en forma de tablas como las que se puede ver, por ejemplo, en un listín telefónico:</P>
+  </DIV>
+  <TABLE>
+    <THEAD>
+      <TR>
+        <TH>COLUMNA1</TH>
+        <TH>COLUMNA2</TH>
+        <TH>COLUMNA3</TH>
+        <TH>COLUMNA4</TH>
+      </TR>
+    </THEAD>
+    <TBODY>
+      <TR>
+        <TD>Nombre</TD>
+        <TD>Apellidos</TD>
+        <TD>Población</TD>
+        <TD>Teléfono</TD>
+      </TR>
+      <TR>
+        <TD>Juan</TD>
+        <TD>Martín Gómez</TD>
+        <TD>Madrid</TD>
+        <TD>913332200</TD>
+        <TH>FILA1</TH>
+      </TR>
+      <TR>
+        <TD>Pedro</TD>
+        <TD>Morales Díaz</TD>
+        <TD>Villacastín</TD>
+        <TD>920224455</TD>
+        <TH>FILA2</TH>
+      </TR>
+      <TR>
+        <TD>Ángela</TD>
+        <TD>Campos Santos</TD>
+        <TD>Alcobendas</TD>
+        <TD>916548989</TD>
+        <TH>FILA3</TH>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <P>En este listín interesa tener almacenados de modo ordenado los datos de una serie de personas. Para que aparezcan de modo claro se han desglosado en varios apartados: Nombre, Apellidos, Población y Teléfono, haciendo que aparezca cada uno en una columna diferente. Así es mucho más sencillo encontrar el teléfono de una persona buscando a partir de su nombre.</P>
+  <P>Aquí se puede ver cómo la información referida a una persona, “un dato”, aparece en una fila de la tabla: a esta fila es a lo que se denomina Registro. A cada una de las partes en las que se ha desglosado la información se le denomina Campo, y al conjunto formado por todos los registros, Tabla.</P>
+  <P>Así pues se puede decir que:</P>
+  <DL>
+    <DT>Campo</DT>
+    <DD>cada una de las partes en las que se desglosa la información.</DD>
+    <DT>Registro</DT>
+    <DD>es el concepto básico en el almacenamiento de datos. El registro agrupa la información asociada a un elemento de un conjunto y está compuesto por campos.</DD>
+    <DT>Tabla</DT>
+    <DD>conjunto de registros homogéneos con la misma estructura.</DD>
+  </DL>
+  <P>En el listín telefónico se puede ver que hay unos campos más importantes que otros: así el Nombre es fundamental para que el registro tenga sentido. Sería absurdo que apareciera una dirección en el listín sin ir acompañado de un nombre.</P>
+  <P>Por este motivo se suelen denominar campos fundamentales a aquellos que definen al registro, y campos secundarios a los que lo complementan.</P>
+  <H2>Tipos de Bases de Datos: Planas y Relacionales</H2>
+  <P>El listín telefónico que hemos visto en el apartado anterior es una base de datos plana. Básicamente significa que está compuesta de una sola tabla. En los casos reales esto no ocurre nunca porque cualquier organización tendrá muchos más datos que almacenar y hacerlo en una única tabla nos llevará a repetir muchas veces el mismo dato.</P>
+  <P>Repetir varias veces el mismo dato aumenta el trabajo, pero ocasiona problemas mayores, por ejemplo, podemos incluir errores al repetirlo y que la base de datos los tome por datos distintos.</P>
+  <P>Otro problema es que si el dato cambia (por ejemplo una persona cambia su número de teléfono), tendremos que hacer el cambio en todas las repeticiones.</P>
+  <P>Veamos un nuevo ejemplo de base de datos plana.</P>
+  <TABLE>
+    <THEAD>
+      <TR>
+        <TH>Paciente</TH>
+        <TH>Dirección</TH>
+        <TH>Diagnóstico</TH>
+        <TH>Doctor</TH>
+        <TH>Especialidad</TH>
+        <TH>Consulta</TH>
+      </TR>
+    </THEAD>
+    <TBODY>
+      <TR>
+        <TD>Pedro</TD>
+        <TD>Luna, 10</TD>
+        <TD>Sarampión</TD>
+        <TD>López</TD>
+        <TD>General</TD>
+        <TD>310</TD>
+      </TR>
+      <TR>
+        <TD>Luís</TD>
+        <TD>Arroyo, 15</TD>
+        <TD>Sinusitis</TD>
+        <TD>Alonso</TD>
+        <TD>Otorrino</TD>
+        <TD>402</TD>
+      </TR>
+      <TR>
+        <TD>Pedro</TD>
+        <TD>Luna, 10</TD>
+        <TD>Diabetes</TD>
+        <TD>Sanz</TD>
+        <TD>Digestivo</TD>
+        <TD>120</TD>
+      </TR>
+      <TR>
+        <TD>Luís</TD>
+        <TD>Arroyo, 15</TD>
+        <TD>Fractura</TD>
+        <TD>López</TD>
+        <TD>General</TD>
+        <TD>320</TD>
+      </TR>
+      <TR>
+        <TD>Ana</TD>
+        <TD>Estrella, 22</TD>
+        <TD>Colitis</TD>
+        <TD>Sanz</TD>
+        <TD>Digestivo</TD>
+        <TD>120</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <P>Sólo hay que echar un vistazo para ver que a los pacientes Pedro y Ana le han atendido en dos ocasiones y en las dos ocasiones hemos tenido que incluir su dirección. Del mismo modo, cada vez que el doctor López atiende a un paciente (lo que ocurrirá muchas veces al día), debemos anotar su especialidad y su consulta (que siempre son las mismas).</P>
+  <P>Este mismo ejemplo lo vamos a desarrollar en una base de datos relacional. En este caso la base de datos estará compuesta de tres tablas, pero nos encargaremos de hacer las conexiones adecuadas para que los datos no queden aislados y se puedan relacionar los datos de unas tablas con los datos de las otras:</P>
+  <TABLE>
+    <COLGROUP span="3"></COLGROUP>
+    <COLGROUP span="4"></COLGROUP>
+    <COLGROUP span="3"></COLGROUP>
+    <THEAD>
+      <TR>
+        <TH colspan="3">TABLA 1</TH>
+        <TH colspan="4">TABLA 2</TH>
+        <TH colspan="3">TABLA 3</TH>
+      </TR>
+    </THEAD>
+    <TBODY>  
+      <TR>
+        <TH>Cod.</TH>
+        <TH>Paciente</TH>
+        <TH>Dirección</TH>
+        <TH>Cod.</TH>
+        <TH>Doctor</TH>
+        <TH>Especialidad</TH>
+        <TH>Consulta</TH>
+        <TH>Pac.</TH>
+        <TH>Doctor</TH>
+        <TH>Diag.</TH>
+      </TR>
+      <TR>
+        <TD>401</TD>
+        <TD>Pedro</TD>
+        <TD>Luna, 10</TD>
+        <TD>100</TD>
+        <TD>López</TD>
+        <TD>General</TD>
+        <TD>310</TD>
+        <TD>401</TD>
+        <TD>100</TD>
+        <TD>Sarampión</TD>
+      </TR>
+      <TR>
+        <TD>402</TD>
+        <TD>Luís</TD>
+        <TD>Arroyo, 15</TD>
+        <TD>101</TD>
+        <TD>Alonso</TD>
+        <TD>Otorrino</TD>
+        <TD>402</TD>
+        <TD>402</TD>
+        <TD>101</TD>
+        <TD>Sinusitis</TD>
+      </TR>
+      <TR>
+        <TD>403</TD>
+        <TD>Ana</TD>
+        <TD>Estrella, 22</TD>
+        <TD>102</TD>
+        <TD>Sanz</TD>
+        <TD>Digestivo</TD>
+        <TD>120</TD>
+        <TD>401</TD>
+        <TD>102</TD>
+        <TD>Diabetes</TD>
+      </TR>
+      <TR>
+        <TD colspan="3"></TD>
+        <TD colspan="3"></TD>
+        <TD>402</TD>
+        <TD>100</TD>
+        <TD>Fractura</TD>
+      </TR>
+      <TR>
+        <TD colspan="3"></TD>
+        <TD colspan="3"></TD>
+        <TD>403</TD>
+        <TD>102</TD>
+        <TD>Colitis</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <P>Cada vez que aparece un paciente nuevo incluimos sus datos en la tabla 1 y no tendremos que volver a hacerlo. Para cada doctor usamos la tabla 2, sólo una vez. Y por cada visita de un paciente a un doctor anotamos un registro en la tabla 3. Sólo tendremos que incluir los datos propios de la visita, como el diagnóstico. Los datos del paciente y del doctor, sin tener que repetirlos, podrán ser accedidos gracias al código, que relaciona este registro con otro registro de la tabla 1 y de la tabla 2.</P>
+  <H2>Consideraciones sobre el diseño</H2>
+  <P>Es importante que se tenga claro qué pasos hay que seguir al diseñar una base datos:</P>
+  <UL>
+    <LI>Es importante conocer exactamente para qué se quiere usar la base de datos, qué datos son los que interesan de los que existen en la realidad y qué información se necesitará extraer.<BR>
+Por ejemplo: ¿Necesitamos almacenar en nuestra base de datos si un doctor tiene o no tiene vehículo? Pues dependerá de que en nuestra clínica particular, aquella para la que nos han pedido la base de datos, los doctores hagan visitas a domicilio con vehículo propio. Si es así será un dato importante. Si no es así, ese dato no sirve para nada.</LI>
+    <LI>Una vez que esto esté claro, se definen las Tablas que compondrán la base de datos. Dentro de cada tabla, se piensa qué campos serán necesarios.<BR>
+Conviene detenerse y definir correctamente la base de datos, ya que un mal diseño hará que el sistema sea lento y los resultados no sean los esperados.</LI>
+  </UL>
+</BODY>

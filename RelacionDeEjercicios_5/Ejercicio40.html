@@ -1,0 +1,31 @@
+<!--Crea varios elementos HTML, de forma anidada unos con otros y aplica la propiedad
+selector de hijos (elemento>elemento) a alguno de ellos. Deberás diferenciarlo con el
+selector descendiente (elemento elemento). -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Selectores</title>
+    <style>
+        /* Selector de hijos: solo afecta a los párrafos que son hijos directos de .contenedor */
+        .contenedor > p {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Selector descendiente: afecta a todos los párrafos dentro de .contenedor, sin importar el nivel */
+        .contenedor p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <p>Este es un párrafo hijo directo del contenedor.</p>
+        <div>
+            <p>Este es un párrafo dentro de un div anidado.</p>
+        </div>
+    </div>
+</body>
+</html>

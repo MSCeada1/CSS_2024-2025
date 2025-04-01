@@ -1,0 +1,33 @@
+<!--- Crea una página con tres párrafos, donde en el primero la primera palabra tenga tamaño
+1,5 de la fuente; en el segundo la primera letra tenga tamaño 2 de la fuente y en el tercero la
+primera letra tenga tamaño 3 de la fuente; todos estos elementos deben flotar a la izquierda.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con estilos</title>
+    <style>
+        .parrafo1 span {
+            font-size: 1.5em;
+            float: left;
+            margin-right: 5px;
+        }
+        .parrafo2::first-letter {
+            font-size: 2em;
+            float: left;
+            margin-right: 5px;
+        }
+        .parrafo3::first-letter {
+            font-size: 3em;
+            float: left;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p class="parrafo1"><span>Primer</span> párrafo con la primera palabra en tamaño 1.5 de la fuente.</p>
+    <p class="parrafo2">Segundo párrafo con la primera letra en tamaño 2 de la fuente.</p>
+    <p class="parrafo3">Tercer párrafo con la primera letra en tamaño 3 de la fuente.</p>
+</body>
+</html>

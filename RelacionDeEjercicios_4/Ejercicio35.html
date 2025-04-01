@@ -1,0 +1,71 @@
+<!--Crea varios párrafos para utilizar la propiedad overflow en sus distintos valores.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Overflow</title>
+    <style>
+        .contenedor {
+            width: 300px;
+            height: 100px;
+            margin: 20px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .visible {
+            overflow: visible;
+        }
+        .hidden {
+            overflow: hidden;
+        }
+        .scroll {
+            overflow: scroll;
+        }
+        .auto {
+            overflow: auto;
+        }
+        .overflow-x {
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .overflow-y {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplos de Overflow</h2>
+    
+    <div class="contenedor visible">
+        <strong>overflow: visible;</strong>
+        <p>Este contenido se desbordará del contenedor y será visible fuera de él.</p>
+    </div>
+    
+    <div class="contenedor hidden">
+        <strong>overflow: hidden;</strong>
+        <p>Este contenido se desbordará pero será ocultado y no podrá verse.</p>
+    </div>
+    
+    <div class="contenedor scroll">
+        <strong>overflow: scroll;</strong>
+        <p>Este contenido se desbordará y aparecerán barras de desplazamiento en ambos ejes.</p>
+    </div>
+    
+    <div class="contenedor auto">
+        <strong>overflow: auto;</strong>
+        <p>Este contenido se desbordará y aparecerán barras de desplazamiento solo si es necesario.</p>
+    </div>
+    
+    <div class="contenedor overflow-x">
+        <strong>overflow-x: scroll; overflow-y: hidden;</strong>
+        <p>Este contenido tiene desplazamiento horizontal, pero el contenido vertical se ocultará.</p>
+    </div>
+    
+    <div class="contenedor overflow-y">
+        <strong>overflow-x: hidden; overflow-y: scroll;</strong>
+        <p>Este contenido tiene desplazamiento vertical, pero el contenido horizontal se ocultará.</p>
+    </div>
+</body>
+</html>

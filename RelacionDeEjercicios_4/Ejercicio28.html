@@ -1,0 +1,46 @@
+<!--Disponer en un menú horizontal los nombres de los valores de la propiedad cursor,
+utilizando para ello una lista. Debemos definir el cursor para cada valor-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Cursores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+        }
+        li {
+            padding: 10px 15px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .default { cursor: default; }
+        .pointer { cursor: pointer; }
+        .crosshair { cursor: crosshair; }
+        .move { cursor: move; }
+        .text { cursor: text; }
+        .wait { cursor: wait; }
+        .help { cursor: help; }
+        .not-allowed { cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="default">Default</li>
+        <li class="pointer">Pointer</li>
+        <li class="crosshair">Crosshair</li>
+        <li class="move">Move</li>
+        <li class="text">Text</li>
+        <li class="wait">Wait</li>
+        <li class="help">Help</li>
+        <li class="not-allowed">Not Allowed</li>
+    </ul>
+</body>
+</html>

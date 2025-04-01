@@ -1,0 +1,18 @@
+/* 
+-Texto de todo el documento  de la familia genérica sans-seriff
+-Los márgenes izquierdo y derecho de 4cm
+-Encabezados de segundo nivel alineados a la derecha, color rojo y versalitas (small caps)
+-El color de fondo debe ser el 45 ff 45 (hexadecimal)
+*/
+body {
+    font-family: sans-serif;
+    margin-left: 4cm;
+    margin-right: 4cm;
+    background-color: #45FF45;
+}
+
+h2 {
+    text-align: right;
+    color: red;
+    font-variant: small-caps;
+}

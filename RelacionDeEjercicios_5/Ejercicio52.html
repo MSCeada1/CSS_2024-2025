@@ -1,0 +1,81 @@
+<!--Con el ejercicio 51, realiza lo anterior en forma de filas y con espacio entre ellos.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filas con Espacio</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Contenedor principal en forma de fila con espacio entre ellos */
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Espacio entre los elementos */
+            gap: 20px; /* Espaciado adicional */
+        }
+
+        /* Estilos para cada caja (div) */
+        .caja {
+            width: 22%; /* Tamaño flexible para que quepan en fila */
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
+            align-items: center;
+            text-align: left;
+            gap: 10px; /* Espaciado entre imagen y texto */
+        }
+
+        /* Estilos para imágenes */
+        .caja img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+        }
+
+        /* Responsivo: Si la pantalla es pequeña, se ponen en columna */
+        @media (max-width: 800px) {
+            .contenedor {
+                flex-direction: column;
+                align-items: center;
+            }
+            .caja {
+                width: 80%;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Filas con Espacio entre Ellos</h1>
+    <div class="contenedor">
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 1">
+            <p>Imagen de una playa hermosa.</p>
+        </div>
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 2">
+            <p>Montañas nevadas en invierno.</p>
+        </div>
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 3">
+            <p>Un bosque con árboles altos.</p>
+        </div>
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 4">
+            <p>El atardecer en el desierto.</p>
+        </div>
+    </div>
+
+</body>
+</html>

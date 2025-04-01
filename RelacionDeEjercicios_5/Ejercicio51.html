@@ -1,0 +1,69 @@
+<!--Crea un contenedor con 4 DIV, que contengan texto y una imagen cada uno, coloca los
+DIV en forma de columnas reversible.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas Reversibles</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Contenedor principal */
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Estilos para cada caja (div) */
+        .caja {
+            width: 250px;
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column-reverse; /* Imagen abajo, texto arriba */
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Estilos para imágenes */
+        .caja img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Columnas Reversibles con Texto e Imágenes</h1>
+    <div class="contenedor">
+        <div class="caja">
+            <p>Imagen de una playa hermosa.</p>
+            <img src="https://via.placeholder.com/200" alt="Imagen 1">
+        </div>
+        <div class="caja">
+            <p>Montañas nevadas en invierno.</p>
+            <img src="https://via.placeholder.com/200" alt="Imagen 2">
+        </div>
+        <div class="caja">
+            <p>Un bosque con árboles altos.</p>
+            <img src="https://via.placeholder.com/200" alt="Imagen 3">
+        </div>
+        <div class="caja">
+            <p>El atardecer en el desierto.</p>
+            <img src="https://via.placeholder.com/200" alt="Imagen 4">
+        </div>
+    </div>
+
+</body>
+</html>

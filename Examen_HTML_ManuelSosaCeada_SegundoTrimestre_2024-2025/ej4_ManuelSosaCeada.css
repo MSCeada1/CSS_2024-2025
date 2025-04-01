@@ -1,0 +1,16 @@
+/*
+-En la segunda tabla deben aparecer los bordes de las filas
+-En las listas no rdenadas la viñeta debe ser un cuadro
+*/
+table:nth-of-type(2) tr {
+    border: 1px solid black;
+}
+
+table:nth-of-type(2) td, 
+table:nth-of-type(2) th {
+    border: 1px solid rgb(213, 21, 21);
+}
+
+ul {
+    list-style-type: square;
+}

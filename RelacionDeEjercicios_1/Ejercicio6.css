@@ -1,0 +1,44 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+p {
+    font-size: 16px;
+    color: #222;
+}
+
+
+p.etiqueta {
+    font-weight: bold;
+    color: #007bff;
+    background-color: #e6f2ff;
+    padding: 5px;
+    border-left: 5px solid #007bff;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #666;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}

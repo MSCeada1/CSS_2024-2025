@@ -1,0 +1,4 @@
+.lista-con-imagen {
+    list-style-image: url('icono.png'); /* Ruta de la imagen de viñeta */
+    padding-left: 20px; /* Asegura espacio suficiente para la imagen */
+}

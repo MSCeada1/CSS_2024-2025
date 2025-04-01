@@ -1,0 +1,67 @@
+<!--Crea 5 elementos DIV. Utiliza la propiedad position para comprobar las diferencias
+entre las posiciones: estático, relativo, fijo, absoluto y pegagoso. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Position</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            position: relative;
+            height: 500px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+        .static {
+            background-color: blue;
+            position: static;
+        }
+        .relative {
+            background-color: green;
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+        .absolute {
+            background-color: red;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .fixed {
+            background-color: purple;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+        .sticky {
+            background-color: orange;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demostración de Position</h1>
+    <div class="container">
+        <div class="box static">Static</div>
+        <div class="box relative">Relative</div>
+        <div class="box absolute">Absolute</div>
+        <div class="box sticky">Sticky</div>
+    </div>
+    <div class="box fixed">Fixed</div>
+</body>
+</html>

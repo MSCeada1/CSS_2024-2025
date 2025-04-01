@@ -1,0 +1,10 @@
+.titulo_dam {
+    border-top: 5px solid darkblue;
+    border-bottom: 5px solid darkblue;
+    border-left: 3px dashed crimson;
+    border-right: 3px dashed crimson;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    background-color: lightgray;
+}

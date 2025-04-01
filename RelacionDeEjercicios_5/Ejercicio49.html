@@ -1,0 +1,66 @@
+<!--- Crea una página con cabeceras y párrafos. Cada vez que aparezca una cabecera deberá
+empezar con los caracteres ‘***’ y finalizar con ‘+++’.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeceras con Estilos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Agregar '***' antes y '+++' después de cada cabecera */
+        h1::before, h2::before, h3::before {
+            content: "*** ";
+            color: red;
+            font-weight: bold;
+        }
+
+        h1::after, h2::after, h3::after {
+            content: " +++";
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Estilos para las cabeceras */
+        h1 {
+            font-size: 28px;
+            color: darkblue;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: darkgreen;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: darkred;
+        }
+
+        /* Estilos para párrafos */
+        p {
+            font-size: 16px;
+            text-align: justify;
+            margin: 10px 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Título Principal</h1>
+    <p>Este es un párrafo introductorio que explica el contenido de la sección principal.</p>
+
+    <h2>Subtítulo Secundario</h2>
+    <p>Este párrafo contiene información relevante sobre el tema tratado en esta parte de la página.</p>
+
+    <h3>Subtítulo Terciario</h3>
+    <p>Más detalles se pueden agregar en esta sección para proporcionar información adicional.</p>
+
+</body>
+</html>

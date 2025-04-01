@@ -1,0 +1,68 @@
+<!--Utilizando la propiedad “column count”, que nos permite definir la cantidad de
+columnas de un texto dentro de un DIV, definir distintas medias queries, para que se
+muestren dos columnas si el ancho del dispositivo es menor a 800px, tres columnas si el
+ancho del dispositivo es menor a 1280px y cuatro columnas si el ancho del dispositivo es
+mayor o igual a 1400px.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto en Columnas con Media Queries</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Contenedor del texto con columnas */
+        .contenido {
+            width: 90%;
+            margin: auto;
+            text-align: justify;
+            column-gap: 20px; /* Espaciado entre columnas */
+        }
+
+        /* Columnas por defecto */
+        .contenido {
+            column-count: 1;
+        }
+
+        /* Media query: 2 columnas si el ancho es menor a 800px */
+        @media (max-width: 800px) {
+            .contenido {
+                column-count: 2;
+            }
+        }
+
+        /* Media query: 3 columnas si el ancho es menor a 1280px */
+        @media (min-width: 801px) and (max-width: 1279px) {
+            .contenido {
+                column-count: 3;
+            }
+        }
+
+        /* Media query: 4 columnas si el ancho es mayor o igual a 1400px */
+        @media (min-width: 1400px) {
+            .contenido {
+                column-count: 4;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Texto en Columnas</h1>
+    <div class="contenido">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Morbi bibendum, lectus non efficitur fringilla, nulla sapien pharetra ligula, eu scelerisque augue felis eu eros. Cras interdum scelerisque magna, sed facilisis augue venenatis eget. Pellentesque eget odio non sapien auctor tincidunt. 
+        <br><br>
+        Suspendisse potenti. Proin nec urna auctor, ullamcorper arcu nec, accumsan odio. Etiam vel lacus at metus vestibulum dapibus. Sed volutpat turpis at dui suscipit scelerisque. Aenean at volutpat mauris. 
+        <br><br>
+        Quisque non ex in lectus vehicula ullamcorper in nec ligula. Praesent in nunc eget risus lacinia laoreet. Phasellus sagittis nisi nec dapibus vulputate. Nulla a metus at lacus facilisis rhoncus.
+    </div>
+
+</body>
+</html>

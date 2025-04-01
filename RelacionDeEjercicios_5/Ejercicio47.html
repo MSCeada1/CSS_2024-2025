@@ -1,0 +1,52 @@
+<!--Crea una tabla con varias filas y varias columnas. Deja las celdas impares vacías y el
+resto añade contenido. A las celdas vacías aplica reglas de estilo-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con celdas vacías</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Estilo para las celdas vacías */
+        td:empty {
+            background-color: lightgray;
+            border: 2px dashed red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tabla con Celdas Vacías</h2>
+    <table>
+        <tr>
+            <td></td> <td>Dato 1</td> <td></td> <td>Dato 2</td>
+        </tr>
+        <tr>
+            <td>Dato 3</td> <td></td> <td>Dato 4</td> <td></td>
+        </tr>
+        <tr>
+            <td></td> <td>Dato 5</td> <td></td> <td>Dato 6</td>
+        </tr>
+        <tr>
+            <td>Dato 7</td> <td></td> <td>Dato 8</td> <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>

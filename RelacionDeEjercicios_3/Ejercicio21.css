@@ -1,0 +1,27 @@
+/* Estilo para el body con imagen de fondo */
+body {
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcomicvine.gamespot.com%2Fbanana-joe%2F4005-104324%2Fimages%2F&psig=AOvVaw2Eily-tSanDZfzl5aqe3KH&ust=1739013960365000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCQk4e6sYsDFQAAAAAdAAAAABAE') no-repeat; /* Imagen de fondo */
+    background-position: right 30%, 60%;  /* Posición de la imagen en el 30% de la derecha y 60% de arriba */
+    background-size: cover; /* Escalar la imagen para cubrir toda el área disponible */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Estilo para el elemento h3 con imagen de fondo */
+h3 {
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcomicvine.gamespot.com%2Fbanana-joe%2F4005-104324%2Fimages%2F&psig=AOvVaw2Eily-tSanDZfzl5aqe3KH&ust=1739013960365000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCQk4e6sYsDFQAAAAAdAAAAABAE') no-repeat center center; /* Imagen centrada */
+    background-size: cover; /* Escalar la imagen para cubrir el área */
+    color: white;  /* Asegura que el texto sea legible sobre el fondo */
+    padding: 30px;
+    font-size: 24px;
+}
+
+/* Estilo para el elemento p con imagen de fondo */
+p {
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcomicvine.gamespot.com%2Fbanana-joe%2F4005-104324%2Fimages%2F&psig=AOvVaw2Eily-tSanDZfzl5aqe3KH&ust=1739013960365000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCQk4e6sYsDFQAAAAAdAAAAABAE') no-repeat center center; /* Imagen centrada */
+    background-size: cover; /* Escalar la imagen para cubrir el área */
+    color: white;  /* Asegura que el texto sea legible sobre el fondo */
+    padding: 20px;
+    font-size: 18px;
+}

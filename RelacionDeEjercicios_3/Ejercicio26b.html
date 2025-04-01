@@ -1,0 +1,36 @@
+<!--Crea un contenedor donde existan varios párrafos. Deberás aplicar una característica
+de tamaño diferente a cada uno de ellos utilizando la medida “em”. -->
+<!DOCTYPE html>
+<head>
+    <title>Contenedor con párrafos</title>
+    <style>
+        .contenedor {
+            width: 80%;
+            margin: 0 auto;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .p1 {
+            font-size: 1em; /* Tamaño normal */
+        }
+        .p2 {
+            font-size: 1.5em; /* 1.5 veces el tamaño de la fuente base */
+        }
+        .p3 {
+            font-size: 2em; /* 2 veces el tamaño de la fuente base */
+        }
+        .p4 {
+            font-size: 0.8em; /* 0.8 veces el tamaño de la fuente base */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <p class="p1">Este es un párrafo con un tamaño de fuente normal (1em).</p>
+        <p class="p2">Este es un párrafo con un tamaño de fuente 1.5 veces más grande (1.5em).</p>
+        <p class="p3">Este es un párrafo con un tamaño de fuente 2 veces más grande (2em).</p>
+        <p class="p4">Este es un párrafo con un tamaño de fuente 0.8 veces más pequeño (0.8em).</p>
+    </div>
+</body>
+</html>

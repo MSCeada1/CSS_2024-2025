@@ -1,0 +1,42 @@
+/* Establecemos la fuente predeterminada para todo el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Usamos Arial como fuente principal */
+    margin: 0; /* Eliminamos el margen por defecto del cuerpo */
+    padding: 0; /* Eliminamos el padding por defecto del cuerpo */
+}
+
+/* Estilos para el contenedor de navegación */
+.menu {
+    background-color: #333; /* Establecemos un color de fondo oscuro para el menú */
+}
+
+/* Estilos para la lista de navegación */
+ul {
+    list-style-type: none; /* Eliminamos los puntos de lista predeterminados */
+    padding: 0; /* Eliminamos el padding predeterminado */
+    margin: 0; /* Eliminamos el margen predeterminado */
+    display: flex; /* Usamos Flexbox para alinear los elementos horizontalmente */
+}
+
+/* Estilo para cada elemento de la lista */
+li {
+    margin: 0 15px; /* Agregamos un margen de 15px a la izquierda y derecha para separar los enlaces */
+}
+
+/* Estilo para los enlaces dentro del menú */
+a {
+    text-decoration: none; /* Eliminamos el subrayado de los enlaces */
+    color: #fff; /* Establecemos el color del texto a blanco */
+    padding: 15px 20px; /* Agregamos relleno (padding) para aumentar el área clickeable */
+    display: block; /* Convertimos el enlace en un bloque para que ocupe toda el área del <li> */
+    border-radius: 5px; /* Bordes redondeados para darle un estilo más suave */
+    transition: all 0.3s ease; /* Agregamos una transición suave para todos los cambios */
+}
+
+/* Estilo del enlace cuando el ratón pasa por encima (hover) */
+a:hover {
+    background-color: #007BFF; /* Cambiamos el fondo a un color azul cuando el ratón pasa por encima */
+    color: white; /* Nos aseguramos de que el texto siga siendo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agregamos una sombra sutil para un efecto de elevación */
+}
+

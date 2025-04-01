@@ -1,0 +1,105 @@
+<!--Utiliza la propiedad flex-wrap con dos valoresdiferentes-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap con Diferentes Valores</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ocupa toda la pantalla */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Alinea al inicio de la página */
+            align-items: center; /* Centra horizontalmente */
+        }
+
+        /* Contenedor principal con flex-wrap: wrap */
+        .contenedor-wrap {
+            display: flex;
+            flex-wrap: wrap; /* Los elementos se envuelven */
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* Contenedor principal con flex-wrap: wrap-reverse */
+        .contenedor-wrap-reverse {
+            display: flex;
+            flex-wrap: wrap-reverse; /* Los elementos se envuelven pero en orden inverso */
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            margin-top: 40px; /* Para separarlo de la primera sección */
+        }
+
+        /* Estilos para cada caja (div) */
+        .caja {
+            width: 250px;
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
+            align-items: center;
+            text-align: left;
+            gap: 10px; /* Espaciado entre imagen y texto */
+            background-color: lightgray;
+        }
+
+        /* Estilos para imágenes */
+        .caja img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flex-wrap con Valores Diferentes</h1>
+
+    <div class="contenedor-wrap">
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 1">
+            <p>Imagen de una playa hermosa.</p>
+        </div>
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 2">
+            <p>Montañas nevadas en invierno.</p>
+        </div>
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 3">
+            <p>Un bosque con árboles altos.</p>
+        </div>
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 4">
+            <p>El atardecer en el desierto.</p>
+        </div>
+    </div>
+
+    <div class="contenedor-wrap-reverse">
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 1">
+            <p>Imagen de una playa hermosa.</p>
+        </div>
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 2">
+            <p>Montañas nevadas en invierno.</p>
+        </div>
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 3">
+            <p>Un bosque con árboles altos.</p>
+        </div>
+        <div class="caja">
+            <img src="https://via.placeholder.com/80" alt="Imagen 4">
+            <p>El atardecer en el desierto.</p>
+        </div>
+    </div>
+
+</body>
+</html>

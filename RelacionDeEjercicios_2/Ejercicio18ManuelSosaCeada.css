@@ -1,0 +1,19 @@
+ul {
+    width: fit-content;
+    padding: 15px;
+    margin: 20px;
+    border: 3px solid darkblue;
+    background-color: lightgray;
+}
+
+
+.lista-outside {
+    list-style-image: url('leon.jpg'); 
+    list-style-position: outside; 
+}
+
+
+.lista-inside {
+    list-style-image: url('tigre.jpg'); 
+    list-style-position: inside; 
+}

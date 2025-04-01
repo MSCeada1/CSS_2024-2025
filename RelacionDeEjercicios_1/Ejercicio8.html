@@ -1,0 +1,43 @@
+<!--a) Crea una estructura de iframes, en la que se definan 4 partes; cada parte deberá
+contener un texto que sea la referencia a un enlace a otra página.
+ b) Define 4 tipos de estilos diferentes, al menos en color; uno para cada tipo de enlace:
+visitado, no visitado, activo y cuando pasamos el ratón por encima.
+ c) Comprueba que en un instante dado, se pueden observar los 4 tipos de estilos, en la
+estructura de iframes.-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 8</title>
+        <style>
+            a:link {
+                color: rgb(139, 97, 43);
+            }
+            /*color del enlace*/
+            a:visited {
+                color: rgb(88, 116, 156)
+            }
+            /*color que se pone al poner el cursos encima*/
+            a:hover {
+                color: rgb(12, 233, 31);
+            }
+            /*color quie se poner al pulsar el enlace*/
+            a:active {
+                color: rgb(2, 6, 19);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <iframe src="Ejercicio1ConEstiloEnCabezera.html" width="25%" height="200"></iframe>
+        <iframe src="Ejercicio1ConEstiloEnEtiquetas.html" width="25%" height="200"></iframe>
+        <iframe src="Ejercicio3ConEstiloEnEtiquetas.html" width="25%" height="200"></iframe>
+        <iframe src="Ejercicio5ManuelSosaCeada.html" width="25%" height="200"></iframe>
+    
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fencycolorpedia.es%2F0000ff&psig=AOvVaw0xPQX1UIXjACa383043eaw&ust=1738744006677000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPiC0KjMqYsDFQAAAAAdAAAAABAE" target="_blank">Enlace 1</a>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/6/6d/Solid_yellow.png" target="_blank">Enlace 2</a>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.m.wikipedia.org%2Fwiki%2FArchivo%3ASolid_red.svg&psig=AOvVaw14d104_RrDXNl2y8LIN8lu&ust=1738744072041000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOiU0MfMqYsDFQAAAAAdAAAAABAE" target="_blank">Enlace 3</a>
+        <a href="https://static.wikia.nocookie.net/aesthetics/images/0/0e/Green.jpg/revision/latest/thumbnail/width/360/height/450?cb=20200723215419" target="_blank">Enlace 4</a>
+    </body>
+</html>

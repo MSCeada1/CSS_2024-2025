@@ -1,0 +1,56 @@
+<!--Crea una página HTLM, que muestre varios párrafos de forma que se le aplique a cada
+uno un mínimo y un máximo en altura y anchura. Realiza una comparación utilizando altura
+y anchura fija-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Párrafos con Altura y Anchura Mínima y Máxima</title>
+    <style>
+        /* Estilos para los párrafos con min y max */
+        .parrafo-dinamico {
+            width: 60%; /* Ancho inicial */
+            min-width: 200px; /* Ancho mínimo */
+            max-width: 500px; /* Ancho máximo */
+            height: 100px; /* Altura inicial */
+            min-height: 50px; /* Altura mínima */
+            max-height: 200px; /* Altura máxima */
+            background-color: lightblue;
+            padding: 10px;
+            margin: 20px;
+            overflow: auto;
+        }
+
+        /* Estilos para los párrafos con altura y anchura fija */
+        .parrafo-fijo {
+            width: 300px; /* Ancho fijo */
+            height: 150px; /* Altura fija */
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 20px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Párrafos con Altura y Anchura Mínima y Máxima</h1>
+
+    <p class="parrafo-dinamico">
+        Este es un párrafo con altura y anchura dinámica. Su tamaño variará según el contenido,
+        pero respetará los valores mínimos y máximos establecidos.
+    </p>
+
+    <p class="parrafo-dinamico">
+        Otro párrafo con características similares. Si el contenido es mayor, la altura y el ancho
+        aumentarán, pero no superarán los límites establecidos por los valores máximos.
+    </p>
+
+    <p class="parrafo-fijo">
+        Este es un párrafo con altura y anchura fija. Su tamaño es constante y no cambiará, sin importar
+        la cantidad de contenido.
+    </p>
+
+    <p class="parrafo-fijo">
+        Otro párrafo de tamaño fijo. Siempre tendrá el mismo tamaño, independientemente de su contenido.
+    </p>
+</body>
+</html>
